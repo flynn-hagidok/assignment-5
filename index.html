@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bf-[#f5fff6]">
     <!-- header section -->
     <header class="">
         <div class="flex md:flex-row flex-col justify-between my-2 lg:my-0 lg:h-25 lg:items-center">
@@ -36,16 +36,276 @@
 
         <!--banner section-->
         <div class="items-center justify-center">
-            <div class="text-center bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] w-full py-5"> 
+            <div
+                class="text-center bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] w-full py-5">
                 <div class="flex justify-center">
                     <img src="assets/logo-dark.png" alt="" class="w-30">
                 </div>
                 <h2 class="text-[2rem] font-medium text-white">Emergency Service Directory</h2>
-                <p class="text-white">Goverment Emergency Services at Your Fingertip - A Project by Goverment of the People's Republic of
+                <p class="text-white">Goverment Emergency Services at Your Fingertip - A Project by Goverment of the
+                    People's Republic of
                     Bangladesh</p>
             </div>
         </div>
     </header>
+
+    <!--card section-->
+    <section class="flex flex-col lg:flex-row w-full p-10 gap-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center">
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/emergency.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">National Emergency Number</h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">National Emergency</p>
+                <p class="text-[1.5rem] font-bold mt-2">999</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-12 text-center">
+                    All</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white font-medium px-10 py-2 gap-2 flex flex-row items-center justify-center cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/police.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">Police Helpline Number</h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">Police</p>
+                <p class="text-[1.5rem] font-bold mt-2">999</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-20 text-center">
+                    Police</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white px-10 py-2 flex flex-row items-center justify-center gap-2 font-medium cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/fire-service.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">Fire Service Number</h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">Fire Service</p>
+                <p class="text-[1.5rem] font-bold mt-2">999</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-15 text-center">
+                    Fire</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white px-10 py-2 flex flex-row items-center justify-center gap-2 font-medium cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/ambulance.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">Ambulance Service</h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">Ambulance</p>
+                <p class="text-[1.5rem] font-bold mt-2">1994-999999</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-20 text-center">
+                    Health</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/emergency.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">Women & Child Helpline</h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">Women & Child Helpliney</p>
+                <p class="text-[1.5rem] font-bold mt-2">109</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-15 text-center">
+                    Help</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/emergency.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">Anti-Corruption Helpline</h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">Anti-Corruption</p>
+                <p class="text-[1.5rem] font-bold mt-2">106</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-15 text-center">
+                    Govt.</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/emergency.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">Electricity Helpline</h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">Electricity Outage</p>
+                <p class="text-[1.5rem] font-bold mt-2">16216</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-25 text-center">
+                    Electricity</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/emergency.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">Brac Helpline</h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">Brac</p>
+                <p class="text-[1.5rem] font-bold mt-2">16445</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-15 text-center">
+                    NGO</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-90 p-8 bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between">
+                    <img src="assets/emergency.png" alt="" class="w-10 p-2 rounded-xl bg-[#ffe3e2]">
+                    <img src="https://img.icons8.com/material-outlined/24/filled-like.png" alt="filled-like"
+                        class="w-8 h-8 cursor-pointer" />
+                </div>
+                <h3 class="text-[1.3rem] font-bold mt-5">Bangladesh Railway Helpline </h3>
+                <p class="text-[1.125rem] font-normal text-[#5c5c5c]">Bangladesh Railway</p>
+                <p class="text-[1.5rem] font-bold mt-2">163</p>
+                <p
+                    class="text-[1.125rem] font-normal text-[#5c5c5c] border-2 bg-[#f2f2f2] rounded-2xl w-20 text-center">
+                    Travel</p>
+                <div class="flex justify-between mt-5 gap-4 md:gap-0">
+                    <button
+                        class="border-1 shadow-gray-200 bg-[#ffffff] px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer text-[#5c5c5c] rounded-xl">
+                        <img class="w-5 h-5 brightness-0 opacity-80"
+                            src="https://img.icons8.com/material-outlined/24/copy.png" alt="copy" />
+                        Copy
+                    </button>
+                    <button
+                        class="border bg-[#00a63e] text-white px-10 py-2 flex flex-row items-center justify-center gap-2 cursor-pointer rounded-xl">
+                        <img class="w-5 h-5 -rotate-90 brightness-0 invert"
+                            src="https://img.icons8.com/puffy/32/phone-disconnected.png" alt="phone-disconnected" />
+                        Call
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="h-120 border-2 border-green-500 w-100 p-5">
+            <div class="flex justify-between items-center">
+                <p class="text-[1.2rem] font-medium">Call History</p>
+                <p class="text-[1.2rem] text-white font-medium bg-[#00a63e] px-10 py-2 rounded-3xl cursor-pointer">Clear</p>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
