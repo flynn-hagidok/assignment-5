@@ -1,6 +1,6 @@
 //helpline number js
 //national emergency number
-const history = [];
+let callHistory = [];
 
 document.getElementById('national').addEventListener('click', function () {
         alert('calling to national emergency number!');
@@ -8,7 +8,7 @@ document.getElementById('national').addEventListener('click', function () {
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
+        if(availableCoins < decreaseCoins){
                 alert('not enought coins!');
                 return;
         }
@@ -22,21 +22,21 @@ document.getElementById('national').addEventListener('click', function () {
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of callHistory) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -45,7 +45,6 @@ document.getElementById('national').addEventListener('click', function () {
         }
 });
 
-
 //poice helpline number
 document.getElementById('police').addEventListener('click', function () {
         alert('calling to police helpline number!');
@@ -53,7 +52,7 @@ document.getElementById('police').addEventListener('click', function () {
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
+        if(availableCoins < decreaseCoins){
                 alert('not enought coins!');
                 return;
         }
@@ -67,21 +66,21 @@ document.getElementById('police').addEventListener('click', function () {
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of callHistory) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -97,7 +96,7 @@ document.getElementById('fire-service').addEventListener('click', function () {
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
+        if(availableCoins < decreaseCoins){
                 alert('not enought coins!');
                 return;
         }
@@ -111,21 +110,21 @@ document.getElementById('fire-service').addEventListener('click', function () {
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of callHistory) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -141,7 +140,7 @@ document.getElementById('ambulance-service').addEventListener('click', function 
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
+        if(availableCoins < decreaseCoins){
                 alert('not enought coins!');
                 return;
         }
@@ -155,21 +154,21 @@ document.getElementById('ambulance-service').addEventListener('click', function 
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of history) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -185,7 +184,7 @@ document.getElementById('women-child').addEventListener('click', function () {
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
+        if(availableCoins < decreaseCoins){
                 alert('not enought coins!');
                 return;
         }
@@ -199,21 +198,21 @@ document.getElementById('women-child').addEventListener('click', function () {
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of callHistory) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -229,7 +228,7 @@ document.getElementById('anti-corruption').addEventListener('click', function ()
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
+        if(availableCoins < decreaseCoins){
                 alert('not enought coins!');
                 return;
         }
@@ -243,21 +242,21 @@ document.getElementById('anti-corruption').addEventListener('click', function ()
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of callHistory) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -273,7 +272,7 @@ document.getElementById('electricity').addEventListener('click', function () {
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
+        if(availableCoins < decreaseCoins){
                 alert('not enought coins!');
                 return;
         }
@@ -287,21 +286,21 @@ document.getElementById('electricity').addEventListener('click', function () {
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of callHistory) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -317,8 +316,8 @@ document.getElementById('brac').addEventListener('click', function () {
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
-                alert('not enought coins!');
+        if(availableCoins < decreaseCoins){
+                alert('not enough coins!');
                 return;
         }
 
@@ -331,21 +330,21 @@ document.getElementById('brac').addEventListener('click', function () {
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of callHistory) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -361,8 +360,8 @@ document.getElementById('railway').addEventListener('click', function () {
         const availableCoins = parseInt(document.getElementById('coins').innerText);
         const decreaseCoins = 20;
 
-        if(0 >= availableCoins){
-                alert('not enought coins!');
+        if(availableCoins < decreaseCoins){
+                alert('not enough coins!');
                 return;
         }
 
@@ -375,21 +374,21 @@ document.getElementById('railway').addEventListener('click', function () {
                 time: new Date().toLocaleTimeString()
         }
 
-        history.push(data);
+        callHistory.push(data);
 
         const historyData = document.getElementById('historyDetails');
         historyData.innerText = '';
 
-        for (const data of history) {
+        for (const entry of callHistory) {
                 const div = document.createElement('div');
                 div.innerHTML = `
                 <div class="flex justify-between items-center mt-2 rounded-lg py-2 px-5 shadow-[0_2px_5px_rgba(0,0,0,0.3)]">
                         <div>
-                                <p>${data.name}</p>
-                                <p>${data.number}</p>
+                                <p>${entry.name}</p>
+                                <p>${entry.number}</p>
                         </div>
                         <div>
-                                <p>${data.time}</p>
+                                <p>${entry.time}</p>
                         </div>
                 </div>
                 `
@@ -403,6 +402,7 @@ document.getElementById('railway').addEventListener('click', function () {
 document.getElementById('clear-history').addEventListener('click', function(){
         const historyList = document.getElementById('historyDetails');
         historyList.innerHTML = '';
+        callHistory = [];
 });
 
 
@@ -440,7 +440,7 @@ document.getElementById("copyBtn").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
 
 //2
 document.getElementById("copyBtn2").addEventListener("click", function () {
@@ -451,7 +451,7 @@ document.getElementById("copyBtn2").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
 
 //3
 document.getElementById("copyBtn3").addEventListener("click", function () {
@@ -462,7 +462,7 @@ document.getElementById("copyBtn3").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
 
 //4
 document.getElementById("copyBtn4").addEventListener("click", function () {
@@ -473,7 +473,7 @@ document.getElementById("copyBtn4").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
 
 //5
 document.getElementById("copyBtn5").addEventListener("click", function () {
@@ -484,7 +484,7 @@ document.getElementById("copyBtn5").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
 
 //6
 document.getElementById("copyBtn6").addEventListener("click", function () {
@@ -495,7 +495,7 @@ document.getElementById("copyBtn6").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
 
 //7
 document.getElementById("copyBtn7").addEventListener("click", function () {
@@ -506,7 +506,7 @@ document.getElementById("copyBtn7").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
 
 //8
 document.getElementById("copyBtn8").addEventListener("click", function () {
@@ -517,7 +517,7 @@ document.getElementById("copyBtn8").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
 
 //9
 document.getElementById("copyBtn9").addEventListener("click", function () {
@@ -528,4 +528,4 @@ document.getElementById("copyBtn9").addEventListener("click", function () {
     }).catch(err => {
       console.error("Failed to copy text: ", err);
     });
-  });
+});
