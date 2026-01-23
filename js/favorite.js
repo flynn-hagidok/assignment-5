@@ -428,3 +428,104 @@ likeButtons.forEach(btn => {
         Count.innerText = totalCount;
   });
 });
+
+
+//copy js
+//1
+document.getElementById("copyBtn").addEventListener("click", function () {
+    const text = document.getElementById("copyText").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
+
+//2
+document.getElementById("copyBtn2").addEventListener("click", function () {
+    const text = document.getElementById("copyText2").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
+
+//3
+document.getElementById("copyBtn3").addEventListener("click", function () {
+    const text = document.getElementById("copyText3").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
+
+//4
+document.getElementById("copyBtn4").addEventListener("click", function () {
+    const text = document.getElementById("copyText4").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
+
+//5
+document.getElementById("copyBtn5").addEventListener("click", function () {
+    const text = document.getElementById("copyText5").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
+
+//6
+document.getElementById("copyBtn6").addEventListener("click", function () {
+    const text = document.getElementById("copyText6").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
+
+//7
+document.getElementById("copyBtn7").addEventListener("click", function () {
+    const text = document.getElementById("copyText7").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
+
+//8
+document.getElementById("copyBtn8").addEventListener("click", function () {
+    const text = document.getElementById("copyText8").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
+
+//9
+document.getElementById("copyBtn9").addEventListener("click", function () {
+    const text = document.getElementById("copyText9").innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Text copied to clipboard!");
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  });
