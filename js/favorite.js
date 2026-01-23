@@ -404,3 +404,27 @@ document.getElementById('clear-history').addEventListener('click', function(){
         const historyList = document.getElementById('historyDetails');
         historyList.innerHTML = '';
 });
+
+
+//favorite buttons js
+const likeButtons = document.querySelectorAll('.favorite');
+const Count = document.getElementById('count');
+
+let totalCount = 0;
+
+likeButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    if (!btn.classList.contains('liked')) {
+      totalCount++;
+      btn.classList.add('liked', 'text-red-500');
+      btn.classList.remove('text-black-500');
+    } else {
+      totalCount--;
+      btn.classList.remove('liked', 'text-red-500');
+      btn.classList.add('text-black-500');
+    }
+
+        Count.innerText = totalCount;
+  });
+});
